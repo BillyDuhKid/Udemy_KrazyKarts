@@ -4,6 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+
+
+//#include "GameFramework/Character.h"
+//#include "InputActionValue.h"
+
+
 #include "GoKart.generated.h"
 
 UCLASS()
@@ -26,8 +32,10 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+
 private:
-	void MoveForward(float Val);
+	void MoveForward(float Value);
+
 	FVector Velocity;
-	
+
 };
